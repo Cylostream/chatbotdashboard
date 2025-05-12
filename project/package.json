@@ -1,16 +1,18 @@
 {
-  "name": "project",
+  "name": "chatbot-widget-platform",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Customizable Multi-Client Chat Widget Platform",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
     "lint": "eslint . --ext .ts,.tsx",
     "lint:fix": "eslint . --ext .ts,.tsx --fix",
     "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md}\"",
     "format:check": "prettier --check \"**/*.{ts,tsx,js,jsx,json,md}\""
   },
-  "keywords": [],
+  "keywords": ["chatbot", "widget", "customizable", "multi-client"],
   "author": "",
   "license": "ISC",
   "packageManager": "pnpm@10.9.0",
@@ -19,16 +21,20 @@
     "@types/react-dom": "^19.1.4",
     "@typescript-eslint/eslint-plugin": "^8.32.1",
     "@typescript-eslint/parser": "^8.32.1",
+    "@vitejs/plugin-react": "^4.2.1",
     "eslint": "^9.26.0",
     "eslint-config-prettier": "^10.1.5",
     "eslint-plugin-prettier": "^5.4.0",
     "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-react-hooks": "^5.2.0",
     "prettier": "^3.5.3",
-    "typescript": "^5.8.3"
+    "typescript": "^5.8.3",
+    "vite": "^5.2.6",
+    "vite-plugin-cloudflare": "^0.1.1"
   },
   "dependencies": {
     "react": "^19.1.0",
-    "react-dom": "^19.1.0"
+    "react-dom": "^19.1.0",
+    "@supabase/supabase-js": "^2.39.7"
   }
 }
