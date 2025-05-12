@@ -6,10 +6,14 @@ compatibility_date = "2023-12-01"
 [build]
 command = "pnpm run build"
 output_dir = "dist"
+base_dir = "./"
 
 # Functions configuration
+[site]
+bucket = "./dist"
+
 [functions]
-directory = "functions"
+directory = "./functions"
 
 # Environment variables (these will be set in the Cloudflare dashboard)
 # [vars]

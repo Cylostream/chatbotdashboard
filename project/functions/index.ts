@@ -20,7 +20,7 @@ export interface Env {
 }
 
 // Example of a Cloudflare Pages Function
-export const onRequest: PagesFunction<Env> = async (context) => {
+export const onRequest: PagesFunction<Env> = async (_context) => {
   return new Response(JSON.stringify({
     message: "API is under development",
     status: "coming_soon"

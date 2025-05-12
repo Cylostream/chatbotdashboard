@@ -29,8 +29,7 @@
     "eslint-plugin-react-hooks": "^5.2.0",
     "prettier": "^3.5.3",
     "typescript": "^5.8.3",
-    "vite": "^5.2.6",
-    "vite-plugin-cloudflare": "^0.1.1"
+    "vite": "^5.2.6"
   },
   "dependencies": {
     "react": "^19.1.0",
